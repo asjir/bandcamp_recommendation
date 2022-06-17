@@ -1,0 +1,17 @@
+Global:
+  test: true
+Headers:
+  Connection: keep-alive
+  Content-Length: "91"
+  Accept: "*/*"
+  X-Requested-With: XMLHttpRequest
+  User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.88 Safari/537.36
+  Content-Type: application/x-www-form-urlencoded
+  Sec-GPC: "1"
+  Origin: https://bandcamp.com
+  Sec-Fetch-Site: same-origin
+  Sec-Fetch-Mode: cors
+  Sec-Fetch-Dest: empty
+  # Referer: https://barbes.bandcamp.com/album/the-roots-of-chicha
+  Accept-Encoding: gzip, deflate, br
+  Accept-Language: en-GB,en;q=0.9
