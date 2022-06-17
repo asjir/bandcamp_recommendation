@@ -16,7 +16,7 @@ cookie = extract_cookie(requests.get("https://bandcamp.com/asjir"))
 function process_item(item::Dict)
     propise(keys...) = Config(k=>item[k] for k in keys)
     id = item["tralbum_id"]
-    album_props = propise("album_id", "item_url", "num_streamable_tracks", "also_collected_count")
+    album_props = propise("album_id", "item_url", "num_streamable_tracks", "also_collected_count", "band_url", "genre_id", "tralbum_type", "label")
     purchase_props = propise("price", "currency", "why", "purchased", "updated")
     Node(2id+1, ["Album"], album_props), Edge(2item["fan_id"], 2id+1, "Purchase", purchase_props)
 end
