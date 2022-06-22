@@ -1,4 +1,4 @@
-using SQLiteGraph, Serialization, DataStructures
+using SQLiteGraph, Serialization, DataStructures, SparseArrays, ProgressBars
 
 
 db = DB("db.db")
@@ -42,7 +42,3 @@ begin
     cntr = filter(>(1)∘last, cntr)
     counts = sort(collect(cntr), by=last, rev=true)
 end
-
-
-
-
